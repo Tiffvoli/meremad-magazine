@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Tiffvoli/meremad-magazine/issues"
   },
-  "homepage": "https://github.com/Tiffvoli/meremad-magazine#readme"
+  "homepage": "https://github.com/Tiffvoli/meremad-magazine#readme",
+  "devDependencies": {
+    "sass": "^1.32.13"
+  }
 }
