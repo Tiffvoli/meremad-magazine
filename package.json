@@ -1,0 +1,20 @@
+{
+  "name": "meremad-magazine",
+  "version": "1.0.0",
+  "description": "SEM5 Final Exam Interface Design Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiffvoli/meremad-magazine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiffvoli/meremad-magazine/issues"
+  },
+  "homepage": "https://github.com/Tiffvoli/meremad-magazine#readme"
+}
