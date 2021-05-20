@@ -1,5 +1,8 @@
 @import "variables";
 @import "base";
+@import "restaurant";
+@import "articles";
+@import "profile";
 
 //BANNER
 
@@ -15,7 +18,7 @@
   }
 }
 
-.padding-xl {
+.padding-main {
   @include padding-xl;
 }
 

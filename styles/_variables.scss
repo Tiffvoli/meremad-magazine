@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display:ital,wght@0,500;0,900;1,700&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@400;700&display=swap");
 
 //MEDIA QUERIES
 $max-s: 480px;
@@ -9,7 +9,7 @@ $max-l: 1025px;
 $primary: #343539;
 $secondary: #ac9b8c;
 $blush: #d9d2cd;
-$blue-gray: #6e6e76;
+$blue-gray: rgb(110, 110, 118);
 $light-gray: #f5f5f5;
 $dark-grey: #c8cbd1;
 $text: #343539;
