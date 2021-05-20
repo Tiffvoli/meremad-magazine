@@ -5,6 +5,10 @@
   font-family: $serif;
 }
 
+li {
+  list-style: none;
+}
+
 //MIXIN
 
 @mixin main-text {
@@ -161,15 +165,27 @@ p {
   font-size: 1rem;
   text-align: $center;
 }
+.text-center {
+  text-align: center;
+}
 .text-right {
   text-align: right;
 }
 .text-left {
   text-align: left;
 }
+.text-bold {
+  font-weight: bold !important;
+}
+.text-italic {
+  font-style: italic;
+}
 .padding-left {
   padding-left: 1rem;
 }
 .padding-right {
   padding-right: 1rem;
+}
+.flex {
+  @include flex;
 }

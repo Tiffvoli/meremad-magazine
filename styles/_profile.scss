@@ -55,21 +55,117 @@
 .settings {
   max-width: 600px;
   @include flex-column;
+  margin: 0 auto;
   &-info {
     @include flex;
     flex-direction: column;
-    width: 65%;
+    width: 55%;
     padding-bottom: 2rem;
     & input {
       background: transparent;
       border: $border;
       padding: 0.5rem;
-      width: $max-width;
     }
     & label {
       @include paragraph-text;
       font-size: $font-xs;
       padding-bottom: 0.2rem;
     }
+    & h4 {
+      text-align: left;
+    }
+    & .link-button {
+      align-self: center;
+      text-align: center;
+      width: 100%;
+    }
   }
+}
+.profile-img {
+  padding: 3rem;
+  align-self: center;
+  text-align: center;
+}
+.backup {
+  padding-top: 1rem;
+  & label {
+    margin-left: 1rem;
+  }
+}
+
+.return {
+  position: fixed;
+  left: 5rem;
+  cursor: pointer;
+}
+
+//NEW ARTICLE
+
+.new-article-wrapper {
+  padding: 3rem 0;
+  & .text {
+    width: 50%;
+
+    & p:hover {
+      color: $secondary;
+    }
+  }
+  & .text-2 {
+    width: 70%;
+  }
+  & .text-3 {
+    width: 30%;
+  }
+}
+.new-article {
+  &-template {
+    & textarea {
+      background: transparent;
+      border: $border-black;
+      padding: 0.5rem;
+      width: $max-width;
+      @include paragraph-text;
+      margin-bottom: 2rem;
+    }
+    &-title {
+      height: fit-content;
+    }
+    &-subheading {
+      height: 10rem;
+    }
+    &-content {
+      height: 40rem;
+    }
+    &-edit {
+      background: transparent;
+      border: $border-black;
+      padding: 0.5rem;
+      border-bottom: none;
+
+      & span {
+        margin: 0 1rem;
+        @include paragraph-text;
+      }
+    }
+  }
+  & .link-button {
+    margin: 0 auto;
+  }
+}
+
+.border-div {
+  @extend .new-article-template-edit;
+  border: $border-black;
+  height: fit-content;
+  margin-bottom: 2rem;
+
+  & p {
+    padding-bottom: 0;
+  }
+  & span {
+    color: $secondary;
+  }
+}
+.check {
+  margin: 2rem 0;
 }
