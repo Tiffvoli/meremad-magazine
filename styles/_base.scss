@@ -8,7 +8,9 @@
 li {
   list-style: none;
 }
-
+a {
+  text-decoration: none;
+}
 //MIXIN
 
 @mixin main-text {

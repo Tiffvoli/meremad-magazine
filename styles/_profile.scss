@@ -169,3 +169,24 @@
 .check {
   margin: 2rem 0;
 }
+
+.expandable {
+  background: transparent;
+  overflow: hidden;
+  line-height: 50px;
+  transition: all 0.5s ease-in-out;
+  height: 0;
+
+  &:target {
+    height: fit-content;
+  }
+}
+.categories-tags {
+  @extend .filter-sort;
+  display: flex !important;
+  padding: 0 !important;
+}
+.check-list {
+  @extend .filter-sort-list;
+  padding: 0 !important;
+}

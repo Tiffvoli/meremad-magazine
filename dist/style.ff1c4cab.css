@@ -10,6 +10,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   color: #343539;
   letter-spacing: 0.1rem;
@@ -616,6 +620,26 @@ td:hover {
   margin: 2rem 0;
 }
 
+.expandable {
+  background: transparent;
+  overflow: hidden;
+  line-height: 50px;
+  transition: all 0.5s ease-in-out;
+  height: 0;
+}
+.expandable:target {
+  height: fit-content;
+}
+
+.categories-tags {
+  display: flex !important;
+  padding: 0 !important;
+}
+
+.check-list {
+  padding: 0 !important;
+}
+
 .banner {
   height: 50vh;
   background: #ac9b8c;
@@ -665,11 +689,11 @@ td:hover {
   color: #d9d2cd;
 }
 
-.filter-sort {
+.filter-sort, .categories-tags {
   padding: 1rem 2rem;
 }
 
-.filter-sort {
+.filter-sort, .categories-tags {
   color: #343539;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
@@ -681,7 +705,7 @@ td:hover {
   position: relative;
 }
 
-.filter-sort-list, .filter-sort-list label {
+.filter-sort-list, .filter-sort-list label, .check-list label, .check-list {
   color: #343539;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
@@ -691,11 +715,11 @@ td:hover {
   font-size: 1rem;
   padding: 0 1rem;
 }
-.filter-sort-list li {
+.filter-sort-list li, .check-list li {
   list-style: none;
   padding: 0.1rem;
 }
-.filter-sort-list label {
+.filter-sort-list label, .check-list label {
   padding-left: 0.5rem;
 }
 
@@ -711,8 +735,9 @@ td:hover {
   z-index: 1;
 }
 
-.filter-sort:hover > .dropdown,
-.filter-sort .dropdown:hover {
+.filter-sort:hover > .dropdown, .categories-tags:hover > .dropdown,
+.filter-sort .dropdown:hover,
+.categories-tags .dropdown:hover {
   visibility: visible;
   opacity: 1;
   display: flex;
@@ -743,6 +768,10 @@ td:hover {
 }
 .catalogue-info h5 {
   position: relative;
+  cursor: pointer;
+}
+.catalogue-info a {
+  all: unset;
 }
 .catalogue img {
   width: 100%;
