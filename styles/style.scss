@@ -162,3 +162,25 @@
     }
   }
 }
+
+//MEDIA QUERIES
+
+@media (max-width: $max-s) {
+  .filter-sort {
+    padding: 1rem 0.5rem;
+
+    &-list {
+      padding: 0 0.5rem;
+    }
+  }
+  .categories {
+    display: none;
+  }
+  .dropdown {
+    padding: 0;
+    left: 0.5rem;
+  }
+  .catalogue-grid {
+    grid-row-gap: 2rem;
+  }
+}

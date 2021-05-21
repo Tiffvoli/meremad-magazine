@@ -1,5 +1,4 @@
 .content-wrapper {
-  @include flex;
   padding: 7rem 0 1rem;
 
   .text,
@@ -88,14 +87,9 @@
   width: $max-width;
   text-align: center;
   @include flex-column;
-
-  //   &:target {
-  //     background: $primary;
-  //   }
 }
 .popup {
   margin: 70px auto;
-  //transform: translate(-50%, -20%);
   background: $light-gray;
   width: 60%;
   position: relative;
@@ -151,12 +145,12 @@ td {
   font-family: $sans-serif;
   color: $secondary;
   font-size: $font-xs;
+  text-align: $center;
 
   &:hover {
     background: $blush;
   }
 }
-
 //MEDIA QUERIES
 
 @media (max-width: $max-l) {
@@ -164,12 +158,22 @@ td {
   .booking-contact {
     width: 80%;
   }
+  .calendar-schedule {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: $max-m) {
   .calendar,
   .booking-contact {
     width: 100%;
+  }
+  .content-wrapper .text {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .content-wrapper {
+    padding: 3rem 0 1rem;
   }
 }
 
@@ -180,5 +184,8 @@ td {
   }
   td {
     font-size: 0.8rem;
+  }
+  .content-wrapper {
+    padding: 2rem 1rem 1rem;
   }
 }

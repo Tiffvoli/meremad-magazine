@@ -67,8 +67,12 @@ a {
 @mixin padding-xl {
   padding: $padding-xl;
 
-  @media (max-width: $max-m) {
+  @media (max-width: $max-l) {
     padding: $padding-l;
+  }
+
+  @media (max-width: $max-s) {
+    padding: 0;
   }
 }
 
@@ -84,9 +88,12 @@ a {
 
 h1 {
   @include main-text;
-  font-weight: $extra-bold;
   font-size: $font-l;
   padding-bottom: 1rem;
+
+  @media (max-width: $max-s) {
+    font-size: $font-ml;
+  }
 }
 
 h2 {
@@ -109,7 +116,6 @@ h4 {
 }
 h5 {
   @include main-text;
-  font-weight: normal;
   font-size: $font-s;
   padding: 1.5rem 0;
   border: $border-black;
@@ -120,6 +126,9 @@ h5 {
 
   &:hover {
     color: $blush;
+  }
+  @media (max-width: $max-s) {
+    font-size: $font-xs;
   }
 }
 h6 {
@@ -161,6 +170,10 @@ p {
   font-weight: bold;
   font-size: 2.6rem;
   padding: 1rem 0 0.2rem;
+
+  @media (max-width: $max-s) {
+    font-size: $font-ml;
+  }
 }
 .subheading {
   @include paragraph-text;
@@ -184,10 +197,22 @@ p {
 }
 .padding-left {
   padding-left: 1rem;
+
+  @media (max-width: $max-m) {
+    padding: 0;
+  }
 }
 .padding-right {
   padding-right: 1rem;
+
+  @media (max-width: $max-m) {
+    padding: 0;
+  }
 }
 .flex {
   @include flex;
+
+  @media (max-width: $max-m) {
+    flex-direction: column;
+  }
 }
