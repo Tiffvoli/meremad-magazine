@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/Tiffvoli/meremad-magazine#readme",
   "devDependencies": {
+    "cssnano": "^5.0.3",
+    "postcss": "^8.3.0",
     "sass": "^1.32.13"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.0"
   }
 }
