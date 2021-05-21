@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"img/catalogue-img/letz-sushi.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621606965010}],"generated":{"js":"module.exports = \"/6215caaa9d3d35ba6e5859f6b470a74f.jpg\";"},"sourceMaps":null,"error":null,"hash":"45a05d4734c0feea6524184d8bfa89fd","cacheData":{"env":{}}}
+=======
+{"id":"img/catalogue-img/letz-sushi.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621597003479}],"generated":{"js":"module.exports = \"/6215caaa9d3d35ba6e5859f6b470a74f.jpg\";"},"sourceMaps":null,"error":null,"hash":"45a05d4734c0feea6524184d8bfa89fd","cacheData":{"env":{}}}
+>>>>>>> 1759f81da6f55c9cbfe96ae00b19e79c9d7972cc

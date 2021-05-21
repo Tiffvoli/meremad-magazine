@@ -1,1 +1,17 @@
-{"id":"img/catalogue-img/barsushi.jpeg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621606965010}],"generated":{"js":"module.exports = \"/8e44af21b400da9f47be03845526fad5.jpeg\";"},"sourceMaps":null,"error":null,"hash":"f9c725cf6066e174787c7a99bec790b6","cacheData":{"env":{}}}
+{
+  "id": "img/catalogue-img/barsushi.jpeg",
+  "dependencies": [
+    {
+      "name": "/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json",
+      "includedInParent": true,
+      "mtime": 1621597003479
+    }
+  ],
+  "generated": {
+    "js": "module.exports = \"/8e44af21b400da9f47be03845526fad5.jpeg\";"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "f9c725cf6066e174787c7a99bec790b6",
+  "cacheData": { "env": {} }
+}

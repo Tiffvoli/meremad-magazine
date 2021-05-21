@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"img/catalogue-img/hatobi.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621606965010}],"generated":{"js":"module.exports = \"/89621cb170f4afca422b3058ef4a1c53.jpg\";"},"sourceMaps":null,"error":null,"hash":"c4104385e554ff7b738ef0482e3a25fb","cacheData":{"env":{}}}
+=======
+{"id":"img/catalogue-img/hatobi.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621597003479}],"generated":{"js":"module.exports = \"/89621cb170f4afca422b3058ef4a1c53.jpg\";"},"sourceMaps":null,"error":null,"hash":"c4104385e554ff7b738ef0482e3a25fb","cacheData":{"env":{}}}
+>>>>>>> 1759f81da6f55c9cbfe96ae00b19e79c9d7972cc

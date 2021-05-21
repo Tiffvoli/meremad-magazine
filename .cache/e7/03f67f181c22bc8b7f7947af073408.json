@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"img/catalogue-img/karma-sushi.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621606965010}],"generated":{"js":"module.exports = \"/5c37d08aa615ae0006ed075bb1eb4fa9.jpg\";"},"sourceMaps":null,"error":null,"hash":"e61a0e8111aba0b4e1b9f473c85ce89d","cacheData":{"env":{}}}
+=======
+{"id":"img/catalogue-img/karma-sushi.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621597003479}],"generated":{"js":"module.exports = \"/5c37d08aa615ae0006ed075bb1eb4fa9.jpg\";"},"sourceMaps":null,"error":null,"hash":"e61a0e8111aba0b4e1b9f473c85ce89d","cacheData":{"env":{}}}
+>>>>>>> 1759f81da6f55c9cbfe96ae00b19e79c9d7972cc

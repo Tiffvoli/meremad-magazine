@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="text padding-left">
-                <svg xmlns="http://www.w3.org/2000/svg" width="557" height="351" viewBox="0 0 557 351">
+                <svg class="upload-image" xmlns="http://www.w3.org/2000/svg" width="557" height="351" viewBox="0 0 557 351">
                     <g id="Group_33" data-name="Group 33" transform="translate(-666 -321)">
                       <g id="Rectangle_95" data-name="Rectangle 95" transform="translate(666 321)" fill="#fff" stroke="#707070" stroke-width="1">
                         <rect width="557" height="351" stroke="none"/>
@@ -41,7 +41,7 @@
                     <div class="new-article-template-edit"><span>A</span><span class="text-bold">B</span><span class="text-italic">I</span><span>Img</span></div>
                 <textarea class="new-article-template-content">Content...</textarea>
                 </div>
-                <div class="link-button"><a href="#confirmation">Done</a></div>
+                <div class="link-button publish-desktop"><a href="#confirmation">Done</a></div>
                 <!-- Publish pop-up -->
                 <div class="overlay" id="confirmation">
                     <div class="popup">
@@ -52,7 +52,7 @@
                               <path id="Path_8" data-name="Path 8" d="M581.578,4819.069l29.243,21.813,37.425-77.72" transform="translate(-1 -3794.162)" fill="none" stroke="#6e6e76" stroke-linecap="round" stroke-width="7"/>
                             </g>
                           </svg>
-                        <div class="link-button"> <a href="#">Return</a></div>
+                        <div class="link-button"> <a href="/profile/index.html">Return</a></div>
                     </div>
                 </div>
             </div>
@@ -115,11 +115,45 @@
                     </tr>
                 </table>
                <div class="border-div">
-                   <p>Tags <span>▼</span></p>
-                </div>
-                <div class="border-div">
-                    <p>Categories <span>▼</span></p>
+                   <p>Tags <a href="#tags"><span>▼</span></a></p>
+                   <div class="expandable" id="tags">
+                    <div class="categories-tags">
+                        <div class="check-list">
+                               <li><input type="checkbox"><label>Easy</label></li>
+                               <li><input type="checkbox"><label>30-mins meal</label></li>  
+                               <li><input type="checkbox"><label>Hard</label></li>
+                               <li><input type="checkbox"><label>Medium</label></li>
+                               </div>
+                               <div class="check-list">  
+                               <li><input type="checkbox"><label>Health</label></li>
+                               <li><input type="checkbox"><label>Vegan</label></li> 
+                               <li><input type="checkbox"><label>Life</label></li>
+                               <li><input type="checkbox"><label>Diet</label></li>  
+                               </div>
+                        </div>  
+                    </div>
+                  </div>
+                  <div class="border-div">
+                    <p>Categories <a href="#categories"><span>▼</span></a></p>
+                    <div class="expandable" id="categories">
+                        <div class="categories-tags">
+                            <div class="check-list">
+                                   <li><input type="checkbox"><label>Italian</label></li>
+                                   <li><input type="checkbox"><label>American</label></li>  
+                                   <li><input type="checkbox"><label>Japanese</label></li>
+                                   <li><input type="checkbox"><label>Mediterranean</label></li>
+                                   </div>
+                                   <div class="check-list">  
+                                   <li><input type="checkbox"><label>Travel</label></li>
+                                   <li><input type="checkbox"><label>News</label></li> 
+                                   <li><input type="checkbox"><label>Guides</label></li>
+                                   <li><input type="checkbox"><label>Trending</label></li>  
+                                   </div>
+                            </div>  
+                      </div>
                  </div>
+                 <div class="link-button publish-mobile"><a href="#confirmation">Done</a></div>
+                </div>
             </div>
     </section>
 </body>

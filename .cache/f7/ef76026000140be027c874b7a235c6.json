@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"img/articles-img/superfood-banner.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621606965010}],"generated":{"js":"module.exports = \"/7c8b99f71bfc4b876d7feba6052d1636.jpg\";"},"sourceMaps":null,"error":null,"hash":"77bcada2834cae8e3a7438eec5a6c1fc","cacheData":{"env":{}}}
+=======
+{"id":"img/articles-img/superfood-banner.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621597003479}],"generated":{"js":"module.exports = \"/7c8b99f71bfc4b876d7feba6052d1636.jpg\";"},"sourceMaps":null,"error":null,"hash":"77bcada2834cae8e3a7438eec5a6c1fc","cacheData":{"env":{}}}
+>>>>>>> 1759f81da6f55c9cbfe96ae00b19e79c9d7972cc
