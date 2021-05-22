@@ -1,0 +1,190 @@
+@import "/styles/style.scss";
+.banner {
+    padding-bottom: $padding-xl;
+    padding-top: $padding-m;
+    .home-banner {
+        background-image: url(/img/homepage-meremad.png);
+        height: 50vh;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.padding-main {
+    padding: $padding-xl;
+}
+
+h2 {
+    padding-bottom: $padding-xl;
+}
+
+.pr {
+    height: 55vh;
+    width: 100%;
+    margin-bottom: $padding-xl;
+    .pr-image {
+        height: 30vh;
+    }
+    .pr-header {
+        height: 10vh;
+        background: white;
+    }
+    .pr-img {
+        width: 100%;
+        height: 45vh;
+        background-repeat: no-repeat;
+    }
+    .pr1-image {
+        background-image: url(/img/restaurant-sevel.png);
+    }
+    .pr2-image {
+        background-image: url(/img/Fishnchips.png);
+    }
+    .pr3-image {
+        background-image: url(/img/restaurant-spontan.png);
+    }
+    .pr-header {
+        bottom: 15px;
+        width: 100%;
+    }
+    .h3-pr {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        border: 1px solid $blue-gray;
+    }
+}
+
+.mid-section {
+    p {
+        text-align: center;
+        padding-bottom: $padding-xl;
+    }
+    .link-button {
+        display: flex;
+        justify-content: center;
+        margin-top: $padding-l;
+        margin: auto;
+    }
+    img {
+        width: 100%;
+        height: 45vh;
+        padding-bottom: $padding-l;
+    }
+}
+
+.section-articles {
+    padding-top: $padding-xl;
+    .pr1-image {
+        background-image: url(/img/trees.png);
+    }
+    .pr2-image {
+        background-image: url(/img/masterchef.png);
+        background-position: center 10%;
+    }
+    .pr3-image {
+        background-image: url(/img/redzepi.png);
+        background-position: center 65%;
+    }
+    .h3-pr-masterchef {
+        padding: 8px 0;
+    }
+    .h3-pr-noma {
+        padding: 6px 0;
+    }
+}
+
+.section-hermann {
+    p {
+        text-align: center;
+        padding-bottom: $padding-xl;
+    }
+    .link-button {
+        margin: auto;
+    }
+    .hermann-video {
+        margin-top: $padding-xl;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(/img/hermann-video.png);
+    }
+}
+
+@media (min-width: $max-s) {}
+
+@media (min-width: $max-m) {
+    .popular-restaurants,
+    .section-articles,
+    .mid-section,
+    .section-hermann {
+        max-width: 65vw;
+        margin: auto;
+    }
+    .section-hermann {
+        padding-top: $padding-xl;
+    }
+    .mid-section img {
+        height: 35vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-hermann .hermann-video {
+        height: 55vh;
+    }
+    .banner .home-banner {
+        height: 30vh;
+    }
+    .pr {
+        height: 39vh;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .pr .pr-img {
+        width: 100%;
+        height: 30vh;
+        background-repeat: no-repeat;
+    }
+    .popular-restaurants,
+    .section-articles,
+    .mid-section,
+    .section-hermann {
+        max-width: 55vw;
+        margin: auto;
+    }
+    .pr .h3-pr {
+        height: unset;
+    }
+    .pr .h3-pr {
+        padding: 27px 0;
+    }
+}
+
+@media (min-width: $max-l) {
+    .banner .home-banner {
+        height: 50vh;
+    }
+    .popular-restaurants,
+    .mid-section {
+        display: flex;
+        max-width: 100%;
+    }
+    .mid-section {
+        flex-direction: row-reverse;
+    }
+    .mid-section-txt,
+    .mid-section-img {
+        width: 50%;
+    }
+    .mid-section-txt h2,
+    .mid-section-txt p {
+        text-align: left;
+    }
+    .mid-section img {
+        height: 100%;
+    }
+}
