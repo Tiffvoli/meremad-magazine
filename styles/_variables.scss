@@ -1,39 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display:ital,wght@0,500;0,900;1,700&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@400;700&display=swap");
 //MEDIA QUERIES
 $max-s: 480px;
-$max-m: 600px;
+$max-m: 768px;
 $max-l: 1025px;
 //COLOURS
 $primary: #343539;
 $secondary: #ac9b8c;
 $blush: #d9d2cd;
-$blue-gray: #6e6e76;
+$blue-gray: rgb(110,
+110,
+118);
 $light-gray: #f5f5f5;
 $dark-grey: #c8cbd1;
 $text: #343539;
-$white: #ffffff;
+$white: rgb(255,
+255,
+255);
 $black: #000000;
 //TYPOGRAPHY
 $serif: "Playfair Display",
 serif !default;
 $sans-serif: "Raleway",
 sans-serif !default;
-$quote: "Raleway",
-sans-serif;
+$quote: "Libre Baskerville",
+serif !default;
 $italic: italic;
-$regular: 500;
 $bold: 700;
 $extra-bold: 900;
 $center: center;
 $left: left;
 $justify: justify;
 $border: 2px solid $secondary;
+$border-black: 1px solid $blue-gray;
 $font-l: 3rem;
-$font-m: 2rem;
-$font-s: 1.6rem;
-$font-xs: 1.4rem;
+$font-m: 1.6rem;
+$font-s: 1.2rem;
+$font-xs: 1rem;
 //PADDING & MARGIN
-$padding-xl: 2rem;
+$padding-xl: 4rem;
 $padding-l: 1.5rem;
 $padding-m: 1rem;
 $padding-s: 0.5rem;
@@ -43,3 +47,12 @@ $margin-quote: 0.5rem 0 0 2rem;
 $margin-send: 0.4rem 0rem 0 1rem;
 //WIDTH & HEIGHT
 $max-width: 100%;
+//GRID
+$grid: grid;
+$hidden: hidden;
+$auto: auto;
+$grid-column-l: 2fr 1fr;
+$grid-column-m: repeat(4,
+7rem);
+$grid-column-s: repeat(2,
+1fr);

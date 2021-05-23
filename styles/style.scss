@@ -1,2 +1,109 @@
 @import "variables";
 @import "base";
+@import "restaurant-home";
+@import "login";
+.padding-main {
+    @include padding-xl;
+}
+
+//BANNER
+.banner {
+    height: 50vh;
+    background: $secondary;
+    width: 100%;
+    @media (max-width: $max-l) {
+        height: 30vh;
+    }
+}
+
+.padding-main {
+    @include padding-xl;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+//SUB BANNER
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem 0;
+    border-color: $blue-gray;
+    border-style: none none none solid;
+    border-width: 1px;
+    & a {
+        width: 17.5%;
+        @include categories;
+        border-color: $blue-gray;
+        border-style: none solid none none;
+        border-width: 1px;
+    }
+}
+
+//SORTING
+.filter-sort {
+    padding: 1rem 2rem;
+}
+
+.filter-sort {
+    @include paragraph-text;
+    font-size: $font-xs;
+    display: block;
+    position: relative;
+}
+
+.filter-sort-list {
+    @include paragraph-text;
+    font-size: $font-xs;
+    padding: 0 1rem;
+    & li {
+        list-style: none;
+        padding: 0.1rem;
+    }
+    & label {
+        @extend .filter-sort-list;
+        padding-left: 0.5rem;
+    }
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    background: $white;
+    position: absolute;
+    padding: 1rem;
+    left: 2rem;
+    display: none;
+    border: $border-black;
+    z-index: 1;
+}
+
+.filter-sort:hover>.dropdown,
+.filter-sort .dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    @include flex;
+}
+
+//MEDIA QUERIES
+@media (max-width: $max-s) {
+    .filter-sort {
+        padding: 1rem 0.5rem;
+        &-list {
+            padding: 0 0.5rem;
+        }
+    }
+    .categories {
+        display: none;
+    }
+    .dropdown {
+        padding: 0;
+        left: 0.5rem;
+    }
+    .catalogue-grid {
+        grid-row-gap: 2rem;
+    }
+}
