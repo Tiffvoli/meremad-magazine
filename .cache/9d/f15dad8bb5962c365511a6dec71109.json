@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"id":"img/catalogue-img/sota.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621606965010}],"generated":{"js":"module.exports = \"/4189dcce7cacd0422ebcf301a6500b78.jpg\";"},"sourceMaps":null,"error":null,"hash":"13af6d9143154eb79bf9efec2f8b7abb","cacheData":{"env":{}}}
-=======
-{"id":"img/catalogue-img/sota.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621597003479}],"generated":{"js":"module.exports = \"/4189dcce7cacd0422ebcf301a6500b78.jpg\";"},"sourceMaps":null,"error":null,"hash":"13af6d9143154eb79bf9efec2f8b7abb","cacheData":{"env":{}}}
->>>>>>> 1759f81da6f55c9cbfe96ae00b19e79c9d7972cc

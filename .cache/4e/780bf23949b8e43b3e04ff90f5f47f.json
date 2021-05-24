@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"id":"img/articles-img/madklubben.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621606965010}],"generated":{"js":"module.exports = \"/ce81915ef5d76f0003b9d58ae9c3235b.jpg\";"},"sourceMaps":null,"error":null,"hash":"6aef5bb1ae695de071c14a5bc8284849","cacheData":{"env":{}}}
-=======
-{"id":"img/articles-img/madklubben.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621597003479}],"generated":{"js":"module.exports = \"/ce81915ef5d76f0003b9d58ae9c3235b.jpg\";"},"sourceMaps":null,"error":null,"hash":"6aef5bb1ae695de071c14a5bc8284849","cacheData":{"env":{}}}
->>>>>>> 1759f81da6f55c9cbfe96ae00b19e79c9d7972cc

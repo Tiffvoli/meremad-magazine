@@ -1,12 +1,14 @@
 .content-wrapper {
+  padding: 7rem 0 1rem;
+
   .text,
   .gallery {
-    width: 100%;
+    width: 50%;
   }
   .text {
     @include flex;
     flex-direction: column;
-    padding: 1rem 0;
+
     & img {
       width: 100%;
       height: 100%;
@@ -47,7 +49,7 @@
   &-contact {
     @include flex;
     flex-direction: column;
-    width: 100%;
+    width: 65%;
     padding-bottom: 2rem;
     & input {
       background: transparent;
@@ -87,11 +89,11 @@
   @include flex-column;
 }
 .popup {
-  width: 95%;
-  padding: 2rem 1rem;
   margin: 70px auto;
   background: $light-gray;
+  width: 60%;
   position: relative;
+  padding: 3rem 2rem 2rem;
   @include flex-column;
   & .close {
     position: absolute;
@@ -125,7 +127,7 @@
 
 // CALENDAR
 .calendar {
-  width: 100%;
+  width: 65%;
   border-collapse: collapse;
   margin-bottom: 2rem;
 
@@ -142,7 +144,7 @@ td {
   padding: 1rem 0.5rem;
   font-family: $sans-serif;
   color: $secondary;
-  font-size: 0.8rem;
+  font-size: $font-xs;
   text-align: $center;
 
   &:hover {
@@ -151,37 +153,39 @@ td {
 }
 //MEDIA QUERIES
 
-@media (min-width: $max-l) {
-  .content-wrapper {
-    padding: 7rem 0 1rem;
-    @include flex;
-  }
-  .popup {
+@media (max-width: $max-l) {
+  .calendar,
+  .booking-contact {
     width: 80%;
-    padding: 3rem 2rem 2rem;
+  }
+  .calendar-schedule {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: $max-m) {
+  .calendar,
+  .booking-contact {
+    width: 100%;
+  }
+  .content-wrapper .text {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .content-wrapper {
+    padding: 3rem 0 1rem;
+  }
+}
+
+@media (max-width: $max-s) {
+  .popup {
+    width: 95%;
+    padding: 2rem 1rem;
   }
   td {
-    font-size: $font-xs;
+    font-size: 0.8rem;
   }
-  .text,
-  .gallery {
-    width: 50%;
-  }
-  .text {
+  .content-wrapper {
     padding: 2rem 1rem 1rem;
-  }
-}
-
-@media (min-width: $max-m) {
-  .calendar,
-  .booking-contact {
-    width: 65% !important;
-  }
-}
-
-@media (min-width: $max-s) {
-  .calendar,
-  .booking-contact {
-    width: 80%;
   }
 }

@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"id":"img/catalogue-img/sushi-nordic.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621606965010}],"generated":{"js":"module.exports = \"/8fb9bc717888d4c0c78871b5864f5b41.jpg\";"},"sourceMaps":null,"error":null,"hash":"94eee938d1031fbb55d2061f58478104","cacheData":{"env":{}}}
-=======
-{"id":"img/catalogue-img/sushi-nordic.jpg","dependencies":[{"name":"/Users/Tiffany/Documents/KEA/Web Development/Interface Design/meremad-magazine/package.json","includedInParent":true,"mtime":1621597003479}],"generated":{"js":"module.exports = \"/8fb9bc717888d4c0c78871b5864f5b41.jpg\";"},"sourceMaps":null,"error":null,"hash":"94eee938d1031fbb55d2061f58478104","cacheData":{"env":{}}}
->>>>>>> 1759f81da6f55c9cbfe96ae00b19e79c9d7972cc
