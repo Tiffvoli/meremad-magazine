@@ -1,22 +1,5 @@
-@import "/styles/style.scss";
-.banner {
-    padding-bottom: $padding-l;
-    padding-top: $padding-m;
-    & .home-banner {
-        background-image: url(/img/homepage-meremad.png);
-        height: 50vh;
-        width: 100%;
-        background-size: cover;
-    }
-}
-
 .padding-main {
     padding: $padding-l;
-}
-
-.header {
-    padding-bottom: $padding-xl;
-    padding-top: $padding-l;
 }
 
 .pr {
@@ -138,9 +121,6 @@
     .section-hermann .hermann-video {
         height: 55vh;
     }
-    .banner .home-banner {
-        height: 30vh;
-    }
     .pr {
         height: 39vh;
         width: 100%;
@@ -167,9 +147,6 @@
 }
 
 @media (min-width: $max-l) {
-    .banner .home-banner {
-        height: 50vh;
-    }
     .popular-restaurants,
     .section-articles,
     .mid-section {

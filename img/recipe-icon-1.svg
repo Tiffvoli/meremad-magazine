@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-Artboard_3">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_3" data-name="Artboard – 3" clip-path="url(#clip-Artboard_3)">
+    <g id="Ellipse_72" data-name="Ellipse 72" transform="translate(1 1)" fill="#fff" stroke="#6e6e76" stroke-width="1">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.5" fill="none"/>
+    </g>
+    <path id="Path_44" data-name="Path 44" d="M3293.348-2486.515l5.757-5.757a2.1,2.1,0,0,1,1.711-.627c.507.038,1.3,1.043,0,2.338l-5.852,5.852Z" transform="matrix(0.998, 0.07, -0.07, 0.998, -3442.65, 2263.11)" fill="#6e6e76"/>
+    <path id="Path_45" data-name="Path 45" d="M3283.868-2476.011l12.192-9.74-3.948-4.159-5.6,6.2-1.323,2.023-.688,2.15Z" transform="translate(-3277 2501)" fill="#d9d2cd"/>
+  </g>
+</svg>

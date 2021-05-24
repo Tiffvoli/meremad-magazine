@@ -484,6 +484,251 @@ p {
     width: 35%;
   }
 }
+.pr {
+  height: 55vh;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.pr .pr-image {
+  height: 30vh;
+}
+.pr .pr-header {
+  height: 10vh;
+  background: white;
+}
+.pr .pr-img {
+  width: 100%;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pr .pr1-image {
+  background-image: url(/konghans.3cca1157.png);
+}
+.pr .pr2-image {
+  background-image: url(/madklubben.7c54fd62.png);
+}
+.pr .pr3-image {
+  background-image: url(/dragsholm.b514e669.png);
+}
+.pr .pr-header {
+  bottom: 15px;
+  width: 100%;
+}
+.pr .h3-pr {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  border: 1px solid #6e6e76;
+}
+
+.mid-section p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.mid-section .link-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin: auto;
+}
+.mid-section img {
+  width: 100%;
+  height: 45vh;
+  padding-bottom: 1.5rem;
+}
+
+.header {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.section-highlighted {
+  padding-top: 1.5rem;
+}
+.section-highlighted .highlight {
+  width: 100%;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.section-highlighted .highlight-1 {
+  background-image: url(/highlight-1.c412da9e.png);
+  margin-bottom: 1.5rem;
+}
+.section-highlighted .highlight-2 {
+  background-image: url(/highlight-2.5a442546.png);
+  margin-bottom: 1.5rem;
+}
+.section-highlighted .highlight-text {
+  background-color: #ffffffbb;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+.section-highlighted p {
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+.section-highlighted h2 {
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.section-last .pr1-image {
+  background-image: url(/havnebykro.9589a104.png);
+}
+.section-last .pr2-image {
+  background-image: url(/kiinkiin.52153589.png);
+  background-position: center 10%;
+}
+.section-last .pr3-image {
+  background-image: url(/alouette.5a675707.png);
+  background-position: center 65%;
+}
+.section-last .h3-pr-masterchef {
+  padding: 8px 0;
+}
+.section-last .h3-pr-noma {
+  padding: 6px 0;
+}
+
+@media (min-width: 768px) {
+  .popular-restaurants,
+.section-highlighted,
+.mid-section,
+.section-last {
+    max-width: 65vw;
+    margin: auto;
+  }
+
+  .mid-section img {
+    height: 35vh;
+  }
+}
+@media (min-width: 768px) {
+  .pr {
+    height: 39vh;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .pr .pr-img {
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+  }
+
+  .popular-restaurants,
+.section-highlighted,
+.mid-section,
+.section-last {
+    max-width: 55vw;
+    margin: auto;
+  }
+
+  .pr .h3-pr {
+    height: unset;
+  }
+
+  .pr .h3-pr {
+    padding: 27px 0;
+  }
+
+  .section-highlighted .highlight {
+    width: 100%;
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+@media (min-width: 1025px) {
+  .banner .home-banner {
+    height: 50vh;
+  }
+
+  .popular-restaurants,
+.section-last,
+.mid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+    max-width: 100%;
+  }
+
+  .section-last {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+    max-width: 100%;
+  }
+
+  .section-highlighted {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+    max-width: 100%;
+  }
+
+  .mid-section {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .mid-section-txt {
+    margin: auto;
+    padding: 3.5rem;
+  }
+  .mid-section-txt .link-button {
+    margin: 0;
+  }
+
+  .mid-section-txt,
+.mid-section-img {
+    width: 50%;
+  }
+
+  .mid-section-txt h2,
+.mid-section-txt p {
+    text-align: left;
+  }
+
+  .mid-section img {
+    height: 100%;
+  }
+
+  .pr .pr-img {
+    height: 40vh;
+  }
+
+  .pr {
+    height: 48vh;
+  }
+
+  .header {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+
+  .section-highlighted .highlight-text {
+    margin-left: 5rem;
+  }
+}
+@media (min-width: 1125px) {
+  .section-highlighted .highlight-text {
+    margin-left: 0;
+    width: 75%;
+    right: 0px;
+  }
+}
 .padding-main {
   padding: 4rem;
 }

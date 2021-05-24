@@ -2,6 +2,10 @@
 @import "base";
 @import "restaurant-home";
 @import "login";
+@import "article";
+@import "recipe";
+@import "recipes";
+@import "home-page";
 .padding-main {
     @include padding-xl;
 }

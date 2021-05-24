@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
@@ -185,15 +186,6 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.pr .pr1-image {
-  background-image: url(/konghans.3cca1157.png);
-}
-.pr .pr2-image {
-  background-image: url(/madklubben.7c54fd62.png);
-}
-.pr .pr3-image {
-  background-image: url(/dragsholm.b514e669.png);
-}
 .pr .pr-header {
   bottom: 15px;
   width: 100%;
@@ -204,6 +196,16 @@ p {
   text-align: center;
   height: 100%;
   border: 1px solid #6e6e76;
+}
+
+.popular .pr1-image {
+  background-image: url(/konghans.3cca1157.png) !important;
+}
+.popular .pr2-image {
+  background-image: url(/madklubben.7c54fd62.png) !important;
+}
+.popular .pr3-image {
+  background-image: url(/dragsholm.b514e669.png) !important;
 }
 
 .mid-section p {
@@ -220,11 +222,6 @@ p {
   width: 100%;
   height: 45vh;
   padding-bottom: 1.5rem;
-}
-
-.header {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
 }
 
 .section-highlighted {
@@ -261,14 +258,14 @@ p {
 }
 
 .section-last .pr1-image {
-  background-image: url(/havnebykro.9589a104.png);
+  background-image: url(/havnebykro.9589a104.png) !important;
 }
 .section-last .pr2-image {
-  background-image: url(/kiinkiin.52153589.png);
+  background-image: url(/kiinkiin.52153589.png) !important;
   background-position: center 10%;
 }
 .section-last .pr3-image {
-  background-image: url(/alouette.5a675707.png);
+  background-image: url(/alouette.5a675707.png) !important;
   background-position: center 65%;
 }
 .section-last .h3-pr-masterchef {
@@ -279,7 +276,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  .popular-restaurants,
+  .popular,
 .section-highlighted,
 .mid-section,
 .section-last {
@@ -304,7 +301,7 @@ p {
     background-repeat: no-repeat;
   }
 
-  .popular-restaurants,
+  .popular,
 .section-highlighted,
 .mid-section,
 .section-last {
@@ -333,7 +330,7 @@ p {
     height: 50vh;
   }
 
-  .popular-restaurants,
+  .popular,
 .section-last,
 .mid-section {
     display: grid;
@@ -396,11 +393,6 @@ p {
     height: 48vh;
   }
 
-  .header {
-    padding-bottom: 4rem;
-    padding-top: 4rem;
-  }
-
   .section-highlighted .highlight-text {
     margin-left: 5rem;
   }
@@ -412,11 +404,6 @@ p {
     right: 0px;
   }
 }
-.header {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-}
-
 .login {
   display: flex;
   justify-content: center;
@@ -482,6 +469,548 @@ p {
 @media (min-width: 1500px) {
   .login form {
     width: 35%;
+  }
+}
+.article-info {
+  text-align: center;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.section-entry .header {
+  padding-bottom: 0;
+}
+.section-entry .entry-subhead {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.article-content {
+  text-align: center;
+}
+.article-content .author {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  text-align: right;
+  font-weight: 300;
+  color: gray;
+  font-size: 1rem;
+}
+.article-content img {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .entry-subhead {
+    max-width: 64%;
+    margin: auto;
+  }
+
+  .article-content {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icons .icon {
+  display: flex;
+}
+.icons .icon p {
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.icons .icon-img {
+  height: 5vh;
+  width: 5vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.icons .icon-1-img {
+  background-image: url(/recipe-icon-1.f78f179e.svg);
+}
+.icons .icon-2-img {
+  background-image: url(/recipe-icon-2.f876ff27.svg);
+}
+.icons .icon-3-img {
+  background-image: url(/recipe-icon-3.c8721d2c.svg);
+}
+
+.ingredients {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  height: fit-content;
+}
+
+.ingredient {
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+.ingredient p {
+  padding-left: 0.5rem;
+  padding-bottom: 0;
+  font-size: 1rem;
+}
+
+.steps {
+  text-align: center;
+}
+.steps .step {
+  padding-top: 1.5rem;
+}
+.steps .step-number {
+  margin: auto;
+  height: 20vw;
+  width: 20vw;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid #ac9b8c;
+  text-align: center;
+}
+.steps .step-number p {
+  line-height: 1;
+}
+
+.checkbox {
+  position: relative;
+  line-height: 0;
+}
+
+.checkbox:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+
+.checkbox input[type=checkbox] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  border-color: #232323;
+  border-radius: 25%;
+}
+
+.checkbox input[type=checkbox]:focus {
+  outline: 0;
+}
+
+.checkbox input[type=checkbox]:checked + .check-container .check-off {
+  border-color: green;
+}
+
+.checkbox input[type=checkbox]:checked + .check-container .check-on:after {
+  content: "✓";
+  color: green;
+  position: absolute;
+  font-size: 1em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox input[type=checkbox] + .check-container {
+  width: auto;
+  position: relative;
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  top: 2px;
+  pointer-events: none;
+}
+
+.checkbox input[type=checkbox] + .check-container .check-off {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  top: 0;
+  border-radius: 2px;
+  border: 2px solid #232323;
+  border-radius: 50%;
+  transition: border-color ease 0.28s;
+}
+
+@media (min-width: 768px) {
+  .steps .step-number {
+    margin: auto;
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .icons {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .ingredients {
+    margin-top: 1rem;
+    padding: 4rem;
+  }
+
+  .steps {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 1025px) {
+  .recipe-content {
+    display: flex;
+    width: 100%;
+  }
+
+  .step {
+    display: flex;
+    padding: 2 rem;
+  }
+
+  .steps {
+    width: 60%;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .ingredients {
+    width: 40%;
+    padding: 1.5rem;
+  }
+
+  .step-txt {
+    width: 85%;
+  }
+
+  .step-number {
+    width: 15%;
+  }
+
+  .steps .step-number {
+    margin: auto;
+    height: 7vw;
+    width: 7vw;
+  }
+
+  .step-txt p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+.recipes-1 {
+  position: relative;
+}
+.recipes-1 h2 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.recipes-1 .pr1-image {
+  background-image: url(/dinner-1.ecd58efc.png) !important;
+}
+.recipes-1 .pr2-image {
+  background-image: url(/dinner-2.22c95fd4.png) !important;
+}
+.recipes-1 .pr3-image {
+  background-image: url(/dinner-3.cccc6204.png) !important;
+}
+.recipes-1 .pr-2,
+.recipes-1 .pr-3 {
+  display: none;
+}
+.recipes-1 .arrows {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 105%;
+  right: -2.2%;
+  top: 50%;
+}
+.recipes-1 .arrows .arrow-1 {
+  height: 5vh;
+  width: 3vh;
+  background-image: url(/arrow.28e30bbc.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.recipes-1 .arrows .arrow-2 {
+  height: 5vh;
+  width: 3vh;
+  background-image: url(/arrow-right.77e558a1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recipes-2 .pr1-image {
+  background-image: url(/recipe-3.0ab9f525.png) !important;
+}
+.recipes-2 .pr2-image {
+  background-image: url(/recipe-4.de12d4be.png) !important;
+}
+.recipes-2 .pr3-image {
+  background-image: url(/recipe-6.297c07b4.png) !important;
+}
+
+.recipes-3 .pr1-image {
+  background-image: url(/recipe-7.ac2acf04.png) !important;
+}
+.recipes-3 .pr2-image {
+  background-image: url(/recipe-8.b2f486db.png) !important;
+}
+.recipes-3 .pr3-image {
+  background-image: url(/recipe-9.802d9ba7.png) !important;
+}
+
+@media (min-width: 1025px) {
+  .pr-2,
+.pr-3 {
+    display: block !important;
+  }
+}
+.padding-main {
+  padding: 1.5rem;
+}
+
+.pr {
+  height: 55vh;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.pr .pr-image {
+  height: 30vh;
+}
+.pr .pr-header {
+  height: 10vh;
+  background: white;
+}
+.pr .pr-img {
+  width: 100%;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pr .pr1-image {
+  background-image: url(/restaurant-sevel.b1ed0197.png);
+}
+.pr .pr2-image {
+  background-image: url(/Fishnchips.71803aa8.png);
+}
+.pr .pr3-image {
+  background-image: url(/restaurant-spontan.754a03e7.png);
+}
+.pr .pr-header {
+  bottom: 15px;
+  width: 100%;
+}
+.pr .h3-pr {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  border: 1px solid #6e6e76;
+}
+
+.mid-section p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.mid-section .link-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin: auto;
+}
+.mid-section img {
+  width: 100%;
+  height: 45vh;
+  padding-bottom: 1.5rem;
+}
+
+.section-articles {
+  padding-top: 4rem;
+}
+.section-articles .pr1-image {
+  background-image: url(/trees.0f6017d0.png);
+}
+.section-articles .pr2-image {
+  background-image: url(/masterchef.b572faf3.png);
+  background-position: center 10%;
+}
+.section-articles .pr3-image {
+  background-image: url(/redzepi.b0f8071d.png);
+  background-position: center 65%;
+}
+.section-articles .h3-pr-masterchef {
+  padding: 8px 0;
+}
+.section-articles .h3-pr-noma {
+  padding: 6px 0;
+}
+
+.section-hermann p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.section-hermann .link-button {
+  margin: auto;
+}
+.section-hermann .hermann-video {
+  margin-top: 1.5rem;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/hermann-video.37287c5c.png);
+}
+
+@media (min-width: 768px) {
+  .popular-restaurants,
+.section-articles,
+.mid-section,
+.section-hermann {
+    max-width: 65vw;
+    margin: auto;
+  }
+
+  .section-hermann {
+    padding-top: 1.5rem;
+  }
+
+  .mid-section img {
+    height: 35vh;
+  }
+}
+@media (min-width: 768px) {
+  .section-hermann .hermann-video {
+    height: 55vh;
+  }
+
+  .pr {
+    height: 39vh;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .pr .pr-img {
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+  }
+
+  .popular-restaurants,
+.section-articles,
+.mid-section,
+.section-hermann {
+    max-width: 55vw;
+    margin: auto;
+  }
+
+  .pr .h3-pr {
+    height: unset;
+  }
+
+  .pr .h3-pr {
+    padding: 27px 0;
+  }
+}
+@media (min-width: 1025px) {
+  .popular-restaurants,
+.section-articles,
+.mid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+    max-width: 100%;
+  }
+
+  .mid-section {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 4rem;
+  }
+
+  .mid-section-txt {
+    margin: auto;
+    padding: 5.5rem;
+  }
+  .mid-section-txt span {
+    font-size: 35px;
+  }
+  .mid-section-txt .link-button {
+    margin: 0;
+  }
+
+  .mid-section-txt,
+.mid-section-img {
+    width: 50%;
+  }
+
+  .mid-section-txt h2,
+.mid-section-txt p {
+    text-align: left;
+  }
+
+  .mid-section img {
+    height: 100%;
+  }
+
+  .pr .pr-img {
+    height: 40vh;
+  }
+
+  .pr {
+    height: 48vh;
+  }
+
+  body > section.section-articles > div.pr-1.pr > div.pr1-header.pr-header > h3 {
+    padding: 39px 0;
+  }
+
+  .section-hermann {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    padding-top: 4rem;
+  }
+  .section-hermann .hermann-video {
+    width: 50%;
+  }
+  .section-hermann .sec-hermann-txt {
+    width: 50%;
+    margin: auto;
+    padding: 5.5rem;
+  }
+  .section-hermann h2,
+.section-hermann p {
+    text-align: left;
+  }
+  .section-hermann .link-button {
+    margin: 0;
+  }
+
+  .section-articles {
+    padding-top: 4rem;
+  }
+}
+@media (min-width: 1146px) {
+  .h3-pr-masterchef {
+    padding: 39px 0 !important;
+  }
+}
+@media (min-width: 1593px) {
+  .h3-pr-noma {
+    padding: 39px 0 !important;
+  }
+
+  .section-hermann .hermann-video {
+    height: 62vh;
   }
 }
 .padding-main {

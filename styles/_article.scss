@@ -1,0 +1,45 @@
+.article-info {
+    text-align: center;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.section-entry {
+    .header {
+        padding-bottom: 0;
+    }
+    .entry-subhead {
+        font-family: $quote;
+        font-style: $italic;
+        text-align: center;
+    }
+}
+
+.article-content {
+    text-align: center;
+    .author {
+        font-family: $quote;
+        font-style: $italic;
+        text-align: right;
+        font-weight: 300;
+        color: gray;
+        font-size: $font-xs;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .entry-subhead {
+        max-width: 64%;
+        margin: auto;
+    }
+    .article-content {
+        max-width: 90%;
+        margin: auto;
+    }
+}

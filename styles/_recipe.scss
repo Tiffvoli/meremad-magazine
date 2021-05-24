@@ -1,0 +1,180 @@
+.icons {
+    display: flex;
+    justify-content: center;
+    .icon {
+        display: flex;
+        p {
+            font-size: 0.8rem;
+            padding-left: $padding-s;
+            padding-right: $padding-s;
+        }
+    }
+    .icon-img {
+        height: 5vh;
+        width: 5vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .icon-1-img {
+        background-image: url(/img/recipe-icon-1.svg);
+    }
+    .icon-2-img {
+        background-image: url(/img/recipe-icon-2.svg);
+    }
+    .icon-3-img {
+        background-image: url(/img/recipe-icon-3.svg);
+    }
+}
+
+.ingredients {
+    background-color: $light-gray;
+    padding: $padding-m;
+    height: fit-content;
+}
+
+.ingredient {
+    display: flex;
+    padding-bottom: $padding-s;
+    p {
+        padding-left: $padding-s;
+        padding-bottom: 0;
+        font-size: $font-xs;
+    }
+}
+
+.steps {
+    text-align: center;
+    .step {
+        padding-top: $padding-l;
+    }
+    .step-number {
+        margin: auto;
+        height: 20vw;
+        width: 20vw;
+        padding: $padding-l;
+        margin-bottom: $padding-l;
+        border-radius: 50%;
+        border: 1px solid $secondary;
+        text-align: center;
+    }
+    .step-number p {
+        line-height: 1;
+    }
+}
+
+//CHECKBOX
+.checkbox {
+    position: relative;
+    line-height: 0;
+}
+
+.checkbox:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    border-color: #232323;
+    border-radius: 25%;
+}
+
+.checkbox input[type="checkbox"]:focus {
+    outline: 0;
+}
+
+.checkbox input[type="checkbox"]:checked+.check-container .check-off {
+    border-color: green;
+}
+
+.checkbox input[type="checkbox"]:checked+.check-container .check-on:after {
+    content: "✓";
+    color: green;
+    position: absolute;
+    font-size: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox input[type="checkbox"]+.check-container {
+    width: auto;
+    position: relative;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    top: 2px;
+    pointer-events: none;
+}
+
+.checkbox input[type="checkbox"]+.check-container .check-off {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    border-radius: 2px;
+    border: 2px solid #232323;
+    border-radius: 50%;
+    transition: border-color ease 0.28s;
+}
+
+@media (min-width: 768px) {
+    .steps .step-number {
+        margin: auto;
+        height: 10vw;
+        width: 10vw;
+    }
+    .icons {
+        padding-top: $padding-l;
+        padding-bottom: $padding-l;
+    }
+    .ingredients {
+        margin-top: $padding-m;
+        padding: $padding-xl;
+    }
+    .steps {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media (min-width: $max-l) {
+    .recipe-content {
+        display: flex;
+        width: 100%;
+    }
+    .step {
+        display: flex;
+        padding: 2 rem;
+    }
+    .steps {
+        width: 60%;
+        text-align: left;
+        padding-left: 2rem;
+    }
+    .ingredients {
+        width: 40%;
+        padding: $padding-l;
+    }
+    .step-txt {
+        width: 85%;
+    }
+    .step-number {
+        width: 15%;
+    }
+    .steps .step-number {
+        margin: auto;
+        height: 7vw;
+        width: 7vw;
+    }
+    .step-txt p {
+        font-size: $font-xs;
+        padding: $padding-m;
+    }
+}

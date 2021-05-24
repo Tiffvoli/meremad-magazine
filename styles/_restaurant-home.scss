@@ -15,15 +15,6 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .pr1-image {
-        background-image: url(/img/konghans.png);
-    }
-    .pr2-image {
-        background-image: url(/img/madklubben.png);
-    }
-    .pr3-image {
-        background-image: url(/img/dragsholm.png);
-    }
     .pr-header {
         bottom: 15px;
         width: 100%;
@@ -34,6 +25,18 @@
         text-align: center;
         height: 100%;
         border: 1px solid $blue-gray;
+    }
+}
+
+.popular {
+    .pr1-image {
+        background-image: url(/img/konghans.png) !important;
+    }
+    .pr2-image {
+        background-image: url(/img/madklubben.png) !important;
+    }
+    .pr3-image {
+        background-image: url(/img/dragsholm.png) !important;
     }
 }
 
@@ -53,11 +56,6 @@
         height: 45vh;
         padding-bottom: $padding-l;
     }
-}
-
-.header {
-    padding-bottom: $padding-l;
-    padding-top: $padding-l;
 }
 
 .section-highlighted {
@@ -95,14 +93,14 @@
 
 .section-last {
     .pr1-image {
-        background-image: url(/img/havnebykro.png);
+        background-image: url(/img/havnebykro.png) !important;
     }
     .pr2-image {
-        background-image: url(/img/kiinkiin.png);
+        background-image: url(/img/kiinkiin.png) !important;
         background-position: center 10%;
     }
     .pr3-image {
-        background-image: url(/img/alouette.png);
+        background-image: url(/img/alouette.png) !important;
         background-position: center 65%;
     }
     .h3-pr-masterchef {
@@ -114,7 +112,7 @@
 }
 
 @media (min-width: $max-m) {
-    .popular-restaurants,
+    .popular,
     .section-highlighted,
     .mid-section,
     .section-last {
@@ -137,7 +135,7 @@
         height: 30vh;
         background-repeat: no-repeat;
     }
-    .popular-restaurants,
+    .popular,
     .section-highlighted,
     .mid-section,
     .section-last {
@@ -163,7 +161,7 @@
     .banner .home-banner {
         height: 50vh;
     }
-    .popular-restaurants,
+    .popular,
     .section-last,
     .mid-section {
         display: grid;
@@ -215,10 +213,6 @@
     }
     .pr {
         height: 48vh;
-    }
-    .header {
-        padding-bottom: $padding-xl;
-        padding-top: $padding-xl;
     }
     .section-highlighted .highlight-text {
         margin-left: 5rem;
