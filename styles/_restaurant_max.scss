@@ -1,0 +1,191 @@
+.content-wrapper {
+  padding: 7rem 0 1rem;
+
+  .text,
+  .gallery {
+    width: 50%;
+  }
+  .text {
+    @include flex;
+    flex-direction: column;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .info {
+    @include flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &-restaurant {
+      align-self: center;
+
+      & span {
+        @include paragraph-text;
+      }
+      & .header {
+        font-weight: $bold;
+      }
+      & p {
+        line-height: 3rem;
+        font-size: 1rem;
+      }
+      & .hours {
+        @include flex;
+      }
+      & .time {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+//RESTAURANT INFO
+
+// BOOKING
+.booking {
+  &-contact {
+    @include flex;
+    flex-direction: column;
+    width: 65%;
+    padding-bottom: 2rem;
+    & input {
+      background: transparent;
+      border: $border-black;
+      padding: 0.5rem;
+      width: $max-width;
+    }
+    & label {
+      @include paragraph-text;
+      font-size: $font-xs;
+      padding-bottom: 0.2rem;
+    }
+  }
+}
+.overlay {
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(110, 110, 118, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  &::-webkit-scrollbar {
+    background: transparent;
+  }
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.content-booking {
+  width: $max-width;
+  text-align: center;
+  @include flex-column;
+}
+.popup {
+  margin: 70px auto;
+  background: $light-gray;
+  width: 60%;
+  position: relative;
+  padding: 3rem 2rem 2rem;
+  @include flex-column;
+  & .close {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    z-index: 1;
+    transform: translate(-95%, -5%);
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $blue-gray;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  & h5 {
+    border: none !important;
+    font-size: $font-m;
+    padding-bottom: 3rem;
+    background-color: transparent;
+  }
+  & p {
+    font-size: $font-xs;
+  }
+  & * {
+    position: relative;
+  }
+}
+
+// CALENDAR
+.calendar {
+  width: 65%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+
+  &-header {
+    padding: 0.5rem;
+    background: $blush;
+  }
+  &-schedule {
+    width: 100%;
+  }
+}
+td {
+  border: $border-black;
+  padding: 1rem 0.5rem;
+  font-family: $sans-serif;
+  color: $secondary;
+  font-size: $font-xs;
+  text-align: $center;
+
+  &:hover {
+    background: $blush;
+  }
+}
+//MEDIA QUERIES
+
+@media (max-width: $max-l) {
+  .calendar,
+  .booking-contact {
+    width: 80%;
+  }
+  .calendar-schedule {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: $max-m) {
+  .calendar,
+  .booking-contact {
+    width: 100%;
+  }
+  .content-wrapper .text {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .content-wrapper {
+    padding: 3rem 0 1rem;
+  }
+}
+
+@media (max-width: $max-s) {
+  .popup {
+    width: 95%;
+    padding: 2rem 1rem;
+  }
+  td {
+    font-size: 0.8rem;
+  }
+  .content-wrapper {
+    padding: 2rem 1rem 1rem;
+  }
+}

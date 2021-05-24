@@ -65,34 +65,33 @@ a {
 }
 
 @mixin padding-xl {
-  padding: $padding-xl;
-
-  @media (max-width: $max-l) {
-    padding: $padding-l;
-  }
-
-  @media (max-width: $max-s) {
-    padding: 0;
-  }
+  padding: $padding-l;
 }
 
 @mixin grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 22.8rem);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 1rem;
   grid-row-gap: 4rem;
   justify-content: center;
+
+  @media (min-width: $max-s) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: $max-l) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 //TYPOGRAPHY
 
 h1 {
   @include main-text;
-  font-size: $font-l;
+  font-size: $font-ml;
   padding-bottom: 1rem;
 
-  @media (max-width: $max-s) {
-    font-size: $font-ml;
+  @media (min-width: $max-s) {
+    font-size: $font-l;
   }
 }
 
@@ -116,7 +115,7 @@ h4 {
 }
 h5 {
   @include main-text;
-  font-size: $font-s;
+  font-size: $font-xs;
   padding: 1.5rem 0;
   border: $border-black;
   position: absolute;
@@ -127,8 +126,8 @@ h5 {
   &:hover {
     color: $blush;
   }
-  @media (max-width: $max-s) {
-    font-size: $font-xs;
+  @media (min-width: $max-s) {
+    font-size: $font-s;
   }
 }
 h6 {
@@ -168,11 +167,11 @@ p {
   @include main-text;
   letter-spacing: 0.05rem;
   font-weight: bold;
-  font-size: 2.6rem;
+  font-size: $font-ml;
   padding: 1rem 0 0.2rem;
 
-  @media (max-width: $max-s) {
-    font-size: $font-ml;
+  @media (min-width: $max-s) {
+    font-size: 2.6rem;
   }
 }
 .subheading {
@@ -196,23 +195,24 @@ p {
   font-style: italic;
 }
 .padding-left {
-  padding-left: 1rem;
+  padding-left: 0rem;
 
-  @media (max-width: $max-m) {
-    padding: 0;
+  @media (min-width: $max-l) {
+    padding-left: 1rem !important;
   }
 }
 .padding-right {
-  padding-right: 1rem;
+  padding-right: 0rem;
 
-  @media (max-width: $max-m) {
-    padding: 0;
+  @media (min-width: $max-l) {
+    padding-right: 1rem !important;
   }
 }
 .flex {
   @include flex;
+  flex-direction: column;
 
-  @media (max-width: $max-m) {
-    flex-direction: column;
+  @media (min-width: $max-l) {
+    flex-direction: row;
   }
 }

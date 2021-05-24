@@ -1,0 +1,278 @@
+.profile-wrapper {
+  @include flex;
+  padding-bottom: 2rem;
+  flex-direction: column;
+
+  & h4 {
+    max-width: 600px;
+    padding-bottom: 1rem;
+  }
+  &-info {
+    // position: sticky;
+    // top: 1rem;
+    height: 100%;
+  }
+  &-articles {
+    @include flex-column;
+    h3 {
+      text-align: $center;
+      height: 2rem;
+    }
+
+    & .article-wrapper-bottom {
+      padding: 0 0 1rem;
+    }
+  }
+}
+.profile-info {
+  width: 100%;
+  height: 90vh;
+  position: sticky;
+  @include flex-column;
+
+  & img {
+    width: 20vw;
+    object-fit: cover;
+  }
+}
+.profile-button {
+  display: block;
+  & .link-button {
+    width: 12rem;
+    text-align: center;
+    margin: 1rem;
+  }
+}
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+}
+
+//SETTINGS
+
+.settings {
+  max-width: 600px;
+  @include flex-column;
+  margin: 0 auto;
+  &-info {
+    @include flex;
+    flex-direction: column;
+    width: 55%;
+    padding-bottom: 2rem;
+    & input {
+      background: transparent;
+      border: $border;
+      padding: 0.5rem;
+    }
+    & label {
+      @include paragraph-text;
+      font-size: $font-xs;
+      padding-bottom: 0.2rem;
+    }
+    & h4 {
+      text-align: left;
+    }
+    & .link-button {
+      align-self: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+.profile-img {
+  padding: 3rem;
+  align-self: center;
+  text-align: center;
+}
+.backup {
+  padding-top: 1rem;
+  & label {
+    margin-left: 1rem;
+  }
+}
+
+.return {
+  position: fixed;
+  left: 5rem;
+  cursor: pointer;
+}
+
+//NEW ARTICLE
+
+.new-article-wrapper {
+  padding: 3rem 0;
+  & .text {
+    width: 50%;
+
+    & p:hover {
+      color: $secondary;
+    }
+  }
+  & .text-2 {
+    width: 70%;
+  }
+  & .text-3 {
+    width: 30%;
+  }
+}
+.new-article {
+  &-template {
+    & textarea {
+      background: transparent;
+      border: $border-black;
+      padding: 0.5rem;
+      width: $max-width;
+      @include paragraph-text;
+      margin-bottom: 2rem;
+    }
+    &-title {
+      height: fit-content;
+    }
+    &-subheading {
+      height: 10rem;
+    }
+    &-content {
+      height: 40rem;
+    }
+    &-edit {
+      background: transparent;
+      border: $border-black;
+      padding: 0.5rem;
+      border-bottom: none;
+
+      & span {
+        margin: 0 1rem;
+        @include paragraph-text;
+      }
+    }
+  }
+  & .link-button {
+    margin: 0 auto;
+  }
+}
+.upload-image {
+  width: 100%;
+}
+.border-div {
+  @extend .new-article-template-edit;
+  border: $border-black;
+  height: fit-content;
+  margin-bottom: 2rem;
+
+  & p {
+    padding-bottom: 0;
+  }
+  & span {
+    color: $secondary;
+  }
+}
+.check {
+  margin: 2rem 0;
+}
+
+.expandable {
+  background: transparent;
+  overflow: hidden;
+  line-height: 50px;
+  transition: all 0.5s ease-in-out;
+  height: 0;
+
+  &:target {
+    height: fit-content;
+  }
+}
+.categories-tags {
+  @extend .filter-sort;
+  display: flex !important;
+  padding: 0 !important;
+}
+.check-list {
+  @extend .filter-sort-list;
+  padding: 0 !important;
+}
+.log-out-mobile,
+.publish-mobile {
+  display: none;
+}
+//MEDIA QUERIES
+
+// @media (max-width: $max-m) {
+//   .profile-wrapper {
+//     flex-direction: column;
+
+//     &-info {
+//       position: inherit;
+//     }
+//   }
+//   .profile-info {
+//     height: auto;
+
+//     & img {
+//       width: 50vw;
+//       height: 30vh;
+//     }
+//   }
+//   .log-out-desktop {
+//     display: none;
+//   }
+//   .log-out-mobile,
+//   .publish-mobile {
+//     display: block;
+//   }
+//   .new-article-wrapper {
+//     & .text {
+//       width: 100%;
+
+//       & .text-right {
+//         text-align: center;
+//       }
+//     }
+//   }
+//   .new-article {
+//     & .text-2,
+//     & .text-3 {
+//       width: 100%;
+//     }
+//   }
+//   .publish-desktop {
+//     display: none;
+//   }
+// }
+// @media (max-width: $max-s) {
+//   .profile-button {
+//     display: block;
+//   }
+//   .return {
+//     left: 1rem;
+//   }
+//   .settings {
+//     padding: 0 1rem;
+//     &-info {
+//       width: 100%;
+//     }
+//   }
+//   .new-article-wrapper {
+//     padding: 3rem 1rem;
+//   }
+// }
+
+@media (min-width: $max-l) {
+  .profile-button {
+    display: flex;
+  }
+  .profile-wrapper {
+    &-info {
+      position: sticky;
+      top: 1rem;
+    }
+  }
+  .profile-info {
+    position: sticky;
+  }
+  .log-out-mobile,
+  .publish-mobile {
+    display: block;
+  }
+}

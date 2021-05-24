@@ -1,6 +1,6 @@
 .article-wrapper {
   @include flex;
-  padding: 3rem 0 0;
+  padding: 2rem 0 0;
   //height: 100vh;
   &-left,
   &-right {
@@ -149,7 +149,6 @@
   }
   .article-wrapper-bottom {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 1rem;
 
     & .article img {
       height: 30vh;
