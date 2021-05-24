@@ -9,12 +9,12 @@
 //BANNER
 
 .banner {
-  height: 50vh;
+  height: 30vh;
   background: $secondary;
   width: 100%;
 
-  @media (max-width: $max-l) {
-    height: 30vh;
+  @media (min-width: $max-xl) {
+    height: 50vh;
   }
 }
 
@@ -30,7 +30,7 @@
 
 //SUB BANNER
 .categories {
-  display: flex;
+  display: none;
   justify-content: space-around;
   margin: 0.5rem 0;
   border-color: $blue-gray;
@@ -48,7 +48,25 @@
 
 //SORTING
 .filter-sort {
-  padding: 1rem 2rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+
+  & p {
+    padding-bottom: 0;
+  }
+  &-mobile {
+    @include flex;
+    justify-content: space-between;
+    font-size: $font-xs;
+
+    & p {
+      font-size: $font-xs;
+    }
+
+    & .categories-mobile {
+      display: block;
+    }
+  }
 }
 
 .filter-sort {
@@ -60,7 +78,7 @@
 .filter-sort-list {
   @include paragraph-text;
   font-size: $font-xs;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 
   & li {
     list-style: none;
@@ -77,11 +95,11 @@
   opacity: 0;
   background: $white;
   position: absolute;
-  padding: 1rem;
-  left: 2rem;
   display: none;
   border: $border-black;
   z-index: 1;
+  padding: 0;
+  left: 0.5rem;
 }
 
 .filter-sort:hover > .dropdown,
@@ -94,6 +112,7 @@
 //CATALOGUE
 .catalogue-grid {
   @include grid;
+  grid-row-gap: 2rem;
 }
 
 .catalogue {
@@ -160,5 +179,28 @@
     &:hover {
       background-color: $blush;
     }
+  }
+}
+
+//MEDIA QUERIES
+
+@media (min-width: $max-s) {
+  .filter-sort {
+    padding: 1rem 2rem;
+
+    &-list {
+      padding: 0 1rem;
+    }
+  }
+  .categories {
+    display: flex;
+
+    &-mobile {
+      display: none !important;
+    }
+  }
+  .dropdown {
+    padding: 1rem;
+    left: 2rem;
   }
 }

@@ -3,7 +3,8 @@
 //MEDIA QUERIES
 $max-s: 480px;
 $max-m: 768px;
-$max-l: 1025px;
+$max-l: 1024px;
+$max-xl: 1100px;
 
 //COLOURS
 $primary: #343539;
@@ -31,6 +32,7 @@ $border: 2px solid $secondary;
 $border-black: 1px solid $blue-gray;
 
 $font-l: 3rem;
+$font-ml: 2rem;
 $font-m: 1.6rem;
 $font-s: 1.2rem;
 $font-xs: 1rem;
