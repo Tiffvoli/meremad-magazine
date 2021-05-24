@@ -1,0 +1,228 @@
+.pr {
+    height: 55vh;
+    width: 100%;
+    margin-bottom: $padding-l;
+    .pr-image {
+        height: 30vh;
+    }
+    .pr-header {
+        height: 10vh;
+        background: white;
+    }
+    .pr-img {
+        width: 100%;
+        height: 45vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pr-header {
+        bottom: 15px;
+        width: 100%;
+    }
+    .h3-pr {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        border: 1px solid $blue-gray;
+    }
+}
+
+.popular {
+    .pr1-image {
+        background-image: url(/img/konghans.png) !important;
+    }
+    .pr2-image {
+        background-image: url(/img/madklubben.png) !important;
+    }
+    .pr3-image {
+        background-image: url(/img/dragsholm.png) !important;
+    }
+}
+
+.mid-section {
+    p {
+        text-align: center;
+        padding-bottom: $padding-l;
+    }
+    .link-button {
+        display: flex;
+        justify-content: center;
+        margin-top: $padding-l;
+        margin: auto;
+    }
+    img {
+        width: 100%;
+        height: 45vh;
+        padding-bottom: $padding-l;
+    }
+}
+
+.section-highlighted {
+    padding-top: $padding-l;
+    .highlight {
+        width: 100%;
+        height: 75vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .highlight-1 {
+        background-image: url(/img/highlight-1.png);
+        margin-bottom: $padding-l;
+    }
+    .highlight-2 {
+        background-image: url(/img/highlight-2.png);
+        margin-bottom: $padding-l;
+    }
+    .highlight-text {
+        background-color: #ffffffbb;
+        position: absolute;
+        bottom: 0;
+        padding: $padding-m;
+    }
+    p {
+        line-height: 1.6rem;
+        font-size: 1rem;
+    }
+    h2 {
+        text-align: left;
+        font-size: 1.3rem;
+    }
+}
+
+.section-last {
+    .pr1-image {
+        background-image: url(/img/havnebykro.png) !important;
+    }
+    .pr2-image {
+        background-image: url(/img/kiinkiin.png) !important;
+        background-position: center 10%;
+    }
+    .pr3-image {
+        background-image: url(/img/alouette.png) !important;
+        background-position: center 65%;
+    }
+    .h3-pr-masterchef {
+        padding: 8px 0;
+    }
+    .h3-pr-noma {
+        padding: 6px 0;
+    }
+}
+
+@media (min-width: $max-m) {
+    .popular,
+    .section-highlighted,
+    .mid-section,
+    .section-last {
+        max-width: 65vw;
+        margin: auto;
+    }
+    .mid-section img {
+        height: 35vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .pr {
+        height: 39vh;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .pr .pr-img {
+        width: 100%;
+        height: 30vh;
+        background-repeat: no-repeat;
+    }
+    .popular,
+    .section-highlighted,
+    .mid-section,
+    .section-last {
+        max-width: 55vw;
+        margin: auto;
+    }
+    .pr .h3-pr {
+        height: unset;
+    }
+    .pr .h3-pr {
+        padding: 27px 0;
+    }
+    .section-highlighted .highlight {
+        width: 100%;
+        height: 55vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media (min-width: $max-l) {
+    .banner .home-banner {
+        height: 50vh;
+    }
+    .popular,
+    .section-last,
+    .mid-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 3rem;
+        max-width: 100%;
+    }
+    .section-last {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 3rem;
+        max-width: 100%;
+    }
+    .section-highlighted {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 3rem;
+        max-width: 100%;
+    }
+    .mid-section {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: $padding-xl;
+        padding-bottom: $padding-l;
+    }
+    .mid-section-txt {
+        margin: auto;
+        padding: 3.5rem;
+        .link-button {
+            margin: 0;
+        }
+    }
+    .mid-section-txt,
+    .mid-section-img {
+        width: 50%;
+    }
+    .mid-section-txt h2,
+    .mid-section-txt p {
+        text-align: left;
+    }
+    .mid-section img {
+        height: 100%;
+    }
+    .pr .pr-img {
+        height: 40vh;
+    }
+    .pr {
+        height: 48vh;
+    }
+    .section-highlighted .highlight-text {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 1125px) {
+    .section-highlighted .highlight-text {
+        margin-left: 0;
+        width: 75%;
+        right: 0px;
+    }
+}

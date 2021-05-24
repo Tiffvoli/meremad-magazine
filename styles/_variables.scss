@@ -16,7 +16,6 @@ $dark-grey: #c8cbd1;
 $text: #343539;
 $white: rgb(255, 255, 255);
 $black: #000000;
-
 //TYPOGRAPHY
 
 $serif: "Playfair Display", serif !default;
@@ -41,15 +40,14 @@ $font-xs: 1rem;
 
 $padding-xl: 4rem;
 $padding-l: 1.5rem;
-// $padding-m: 1rem;
-// $padding-s: 0.5rem;
-// $padding-xs: 0.2rem;
-// $padding-quote: 0.5rem 0 0 2rem;
-// $margin-quote: 0.5rem 0 0 2rem;
-// $margin-send: 0.4rem 0rem 0 1rem;
+$padding-m: 1rem;
+$padding-s: 0.5rem;
+$padding-xs: 0.2rem;
+$padding-quote: 0.5rem 0 0 2rem;
+$margin-quote: 0.5rem 0 0 2rem;
+$margin-send: 0.4rem 0rem 0 1rem;
 
 //WIDTH & HEIGHT
-
 $max-width: 100%;
 
 //GRID

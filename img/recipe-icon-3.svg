@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="33" viewBox="0 0 35 33">
+  <defs>
+    <clipPath id="clip-Artboard_5">
+      <rect width="35" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_5" data-name="Artboard – 5" clip-path="url(#clip-Artboard_5)">
+    <g id="Ellipse_70" data-name="Ellipse 70" transform="translate(3 1)" fill="#fff" stroke="#6e6e76" stroke-width="1">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.5" fill="none"/>
+    </g>
+    <path id="Path_40" data-name="Path 40" d="M3552.329-2485.2v4.407" transform="translate(-3541 2501)" fill="none" stroke="#d9d2cd" stroke-linecap="round" stroke-width="3"/>
+    <path id="Path_41" data-name="Path 41" d="M3552.329-2485.2v6.792" transform="translate(-3537.099 2498.615)" fill="none" stroke="#6e6e76" stroke-linecap="round" stroke-width="3"/>
+    <path id="Path_42" data-name="Path 42" d="M3552.329-2485.2v8.749" transform="translate(-3533.197 2496.659)" fill="none" stroke="#6e6e76" stroke-linecap="round" stroke-width="3"/>
+    <path id="Path_43" data-name="Path 43" d="M3552.329-2485.2v10.5" transform="translate(-3529.297 2494.904)" fill="none" stroke="#6e6e76" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

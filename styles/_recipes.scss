@@ -1,0 +1,73 @@
+.recipes-1 {
+    position: relative;
+    h2 {
+        padding-top: $padding-l;
+        padding-bottom: $padding-l;
+    }
+    .pr1-image {
+        background-image: url(/img/dinner-1.png) !important;
+    }
+    .pr2-image {
+        background-image: url(/img/dinner-2.png) !important;
+    }
+    .pr3-image {
+        background-image: url(/img/dinner-3.png) !important;
+    }
+    .pr-2,
+    .pr-3 {
+        display: none;
+    }
+    .arrows {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        width: 105%;
+        right: -2.2%;
+        top: 50%;
+        .arrow-1 {
+            height: 5vh;
+            width: 3vh;
+            background-image: url(/img/arrow.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .arrow-2 {
+            height: 5vh;
+            width: 3vh;
+            background-image: url(/img/arrow-right.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.recipes-2 {
+    .pr1-image {
+        background-image: url(/img/recipe-3.png) !important;
+    }
+    .pr2-image {
+        background-image: url(/img/recipe-4.png) !important;
+    }
+    .pr3-image {
+        background-image: url(/img/recipe-6.png) !important;
+    }
+}
+
+.recipes-3 {
+    .pr1-image {
+        background-image: url(/img/recipe-7.png) !important;
+    }
+    .pr2-image {
+        background-image: url(/img/recipe-8.png) !important;
+    }
+    .pr3-image {
+        background-image: url(/img/recipe-9.png) !important;
+    }
+}
+
+@media (min-width: $max-l) {
+    .pr-2,
+    .pr-3 {
+        display: block !important;
+    }
+}
